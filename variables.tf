@@ -1,17 +1,17 @@
 variable "github_organization" {
-  default = "Andys-Collab"
+  default     = "Andys-Collab"
   description = "The GitHub Organization to manage."
 }
 
 variable "github_token" {
-  type = string
+  type        = string
   description = "The GitHub personal access token."
 }
 
 variable "membership" {
   default = {
-    "MosesSupposes" = "admin"
+    "MosesSupposes"   = "admin"
     "Brandon-Pampuch" = "admin"
-    "angel-torres" = "admin"
+    "angel-torres"    = "admin"
   }
 }
