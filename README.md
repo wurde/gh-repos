@@ -1,2 +1,3 @@
-# gh-repos
-Managing repositories within your Organization or Individual account.
+# Terraform GitHub Organization
+
+A PoC for managing GitHub Organizations via Terraform.
