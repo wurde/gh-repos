@@ -2,11 +2,8 @@
 
 provider "github" {
   # This is the target GitHub organization to manage
-  #organization = ""
-
-  # Run outside an organization.
-  individual = true
+  organization = var.github_organization
 
   # This is the GitHub personal access token.
-  token = var.token
+  token = var.github_token
 }
