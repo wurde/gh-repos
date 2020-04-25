@@ -8,30 +8,10 @@ variable "github_token" {
   description = "The GitHub personal access token."
 }
 
-/**
- * Define membership
- */
-
-resource "github_membership" "member_moses" {
-  # (Required) The user to add.
-  username = "MosesSupposes"
-
-  # (Optional) The user role. Must be either `member` or `admin`.
-  role = "admin"
-}
-
-resource "github_membership" "membership_brandon" {
-  # (Required) The user to add.
-  username = "Brandon-Pampuch"
-
-  # (Optional) The user role. Must be either `member` or `admin`.
-  role = "admin"
-}
-
-resource "github_membership" "membership_angel" {
-  # (Required) The user to add.
-  username = "angel-torres"
-
-  # (Optional) The user role. Must be either `member` or `admin`.
-  role = "admin"
+variable "membership" {
+  default = {
+    "MosesSupposes" = "admin"
+    "Brandon-Pampuch" = "admin"
+    "angel-torres" = "admin"
+  }
 }
