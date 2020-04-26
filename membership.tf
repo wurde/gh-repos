@@ -2,7 +2,7 @@
  * Define membership
  */
 
-resource "github_membership" "member_moses" {
+resource "github_membership" "members" {
   for_each = var.membership
 
   # (Required) The user to add.
