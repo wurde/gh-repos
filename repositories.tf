@@ -20,3 +20,9 @@ resource "github_repository" "example" {
   delete_branch_on_merge = true
   auto_init              = true
 }
+
+resource "github_branch_protection" "example" {
+  repository     = github_repository.example.name
+  branch         = "master"
+  enforce_admins = true
+}

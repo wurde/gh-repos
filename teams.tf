@@ -5,7 +5,7 @@
 resource "github_team" "sillyhats" {
   name        = "sillyhats"
   description = "https://amazon.com/funny-hats"
-  privacy     = "visible"
+  privacy     = "secret"
 }
 
 /**
