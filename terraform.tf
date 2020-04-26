@@ -7,6 +7,6 @@ terraform {
   backend "s3" {
     bucket = "andys-terraform-backend"
     region = "us-east-1"
-    key    = "tf-gh-org/"
+    key    = "tf-gh-org/terraform.tfstate"
   }
 }
